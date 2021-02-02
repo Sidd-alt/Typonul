@@ -36,7 +36,7 @@ app.post('/performance', (req, res) => {performance.handlePerformance(req, res, 
 app.post('/history', (req, res) =>  {history.handleHistory(req, res, database)})
 
 app.listen(process.env.PORT || 3000, ()=> {
-    console.log(`app is running on port ${process.env.PORT}`);
+    console.log('app is running on port', process.env.PORT);
 })
 
 
